@@ -2,16 +2,16 @@
     <div id="inside">
         <header>
             <div class="left">
-                <div id="name">Fatigre</div>
+                <div id="name">{{spirit.name}}</div>
             </div>
             <div class="right">
-                <div id="hp">150 hp</div>
+                <div id="hp">{{spirit.hp}}Hp</div>
                 <img class="element-type" src="/mode-nuit.png" alt="">
             </div>
         </header>
         <figure id="art">
-            <img src="/Fatigre.jpg" alt="">
-            <figcaption>N°023 </figcaption>
+            <img src="/Fatigree.jpeg" alt="">
+            <figcaption>{{spirit.figureCaption}}</figcaption>
 
         </figure>
         <div id="capacities">
@@ -22,11 +22,11 @@
                         <img class="element-type" src="/mode-nuit.png" alt="">
 
                     </div>
-                    <div class="name">Sommeil éternel</div>
-                    <div class="damage">120</div>
+                    <div class="name">{{spirit.attackName}}</div>
+                    <div class="damage">{{spirit.attackStrength}}</div>
                 </div>
             </div>
-            <div class="description">Fatigre fait dormir son adversaire jusqu'à la fin des temps</div>
+            <div class="description">{{spirit.attackDescription}}</div>
         </div>
     </div>
 </div>

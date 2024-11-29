@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input, Input, InputSignal } from '@angular/core';
+import { Spirit } from '../../models/spirit.models';
 
 @Component({
   selector: 'app-cardollection',
@@ -8,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class CardollectionComponent {
 
-}
+  @Input()spirit = new Spirit();
+   
+  
+    }
+  
+
+
