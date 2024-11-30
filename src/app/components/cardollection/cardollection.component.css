@@ -3,14 +3,14 @@
     width: 250px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px 10px #f7dc6f;
-    background-color: #f2f3f4;
+    box-shadow: 2px 2px 2px 10px #f7dc6f;
+    background-color: #dcdfe5;
     
 }
 
 #inside {
     padding: 5px;
-    background-color: #f2f3f4;
+    background-color: #dcdfe5;
     
 }
 
@@ -51,7 +51,7 @@ figure#art{
     margin: 0;
     padding: 5px 5px 0 5px;
     width: calc(100% - 10px);
-    background-color: #f2f3f4;
+    background-color: #dcdfe5;
 
     img{
         width: 100%;

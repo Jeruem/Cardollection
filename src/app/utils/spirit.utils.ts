@@ -3,6 +3,10 @@ export enum SpiritType{
     DARK = "Ténèbres",
     DRAGON = "Dragon",
     ICE = "Glace",
+	FIRE="Feu",
+	MENTAL="Mental",
+	PLANT = "Plante",
+	WATER="Eau",
 }
 
 export interface ISpiritProperties{
@@ -21,11 +25,31 @@ export const SpiritTypeProperties: {[key: string]: ISpiritProperties} = {
 	},
 	[SpiritType.DRAGON]: {
 		imageUrl: '/dragon.png',
-		color: 'lightgreen'
+		color: '#ab6753'
 	},
 	[SpiritType.ICE]: {
 		imageUrl: '/ice.png',
 		color: 'lightblue'
+	},
+
+	[SpiritType.FIRE]: {
+		imageUrl: '/Fire.png',
+		color: '#ea8061'
+	},
+
+	[SpiritType.MENTAL]: {
+		imageUrl: '/mental.png',
+		color: 'pink'
+	},
+
+	[SpiritType.PLANT]: {
+		imageUrl: '/plant.png',
+		color: '#85c35d '
+	},
+
+	[SpiritType.WATER]: {
+		imageUrl: 'water.png',
+		color: '#5d82df'
 	},
 }
     

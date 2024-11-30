@@ -1,8 +1,8 @@
 
-<app-search-bar/>
-
-<button (click)="toggleSpirit()">Changer d'esprit</button>
+<app-search-bar [(search)]="search"/>
  
 <div id="card-list">
-    <app-cardollection [spirit]="selectedSpirit()"/>
+    <app-cardollection *ngFor="let spirit of filteredSpirits()" [spirit]="spirit"/>
 </div>
+<div *ngIf="filteredSpirits().length == 0" class="center">No Spirits found !</div>
+<div *ngIf="filteredSpirits().length > 0" class="center">Found {{filteredSpirits().length}} Spirits !</div>

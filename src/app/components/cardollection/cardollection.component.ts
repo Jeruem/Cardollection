@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, computed, input, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Spirit } from '../../models/spirit.models';
 import { SpiritTypeProperties } from '../../utils/spirit.utils';
 
@@ -8,19 +8,16 @@ import { SpiritTypeProperties } from '../../utils/spirit.utils';
   templateUrl: './cardollection.component.html',
   styleUrl: './cardollection.component.css'
 })
-export class CardollectionComponent implements OnChanges {
+export class CardollectionComponent {
 
-  @Input()spirit = new Spirit();
-  SpiritTypeIcon: string = "mode-nuit.png";
-  backgroundColor: string = "purple";
+  spirit = input(new Spirit());
+  SpiritTypeIcon= computed(() => {
+    return SpiritTypeProperties[this.spirit().type].imageUrl;
+  })
+  backgroundColor= computed(() => {
+    return SpiritTypeProperties[this.spirit().type].color;
+  });
 
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes['spirit']) {
-      if (changes['spirit'].previousValue?.type != changes['spirit'].currentValue.type) {
-        this.SpiritTypeIcon = SpiritTypeProperties[this.spirit.type].imageUrl;
-        this.backgroundColor = SpiritTypeProperties[this.spirit.type].color;
-      }
-    }
-  }
+
 
 }
