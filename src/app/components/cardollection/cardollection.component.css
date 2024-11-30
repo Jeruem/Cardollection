@@ -3,13 +3,15 @@
     width: 250px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px 0 rgb(10, 7, 207);
-    background-color: rgb(9, 28, 151);
+    box-shadow: 5px 5px 10px 10px #f7dc6f;
+    background-color: #f2f3f4;
+    
 }
 
 #inside {
     padding: 5px;
-    background-color: #9400D3;
+    background-color: #f2f3f4;
+    
 }
 
 header {
@@ -43,16 +45,13 @@ header .right #hp {
     height: 20px;
 }
 
-.element-type{
-    width: 15px;
-    height: 15px;
-}
+
 
 figure#art{
     margin: 0;
     padding: 5px 5px 0 5px;
     width: calc(100% - 10px);
-    background-color: rgb(73, 14, 223);
+    background-color: #f2f3f4;
 
     img{
         width: 100%;

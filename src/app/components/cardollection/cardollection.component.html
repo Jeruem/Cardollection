@@ -1,16 +1,16 @@
 <div id="card">
-    <div id="inside">
+    <div id="inside" [style.background-color]="backgroundColor">
         <header>
             <div class="left">
                 <div id="name">{{spirit.name}}</div>
             </div>
             <div class="right">
                 <div id="hp">{{spirit.hp}}Hp</div>
-                <img class="element-type" src="/mode-nuit.png" alt="">
+                <img class="element-type" [src]="SpiritTypeIcon" alt="">
             </div>
         </header>
         <figure id="art">
-            <img src="/Fatigree.jpeg" alt="">
+            <img [src]="spirit.image" alt=""/>
             <figcaption>{{spirit.figureCaption}}</figcaption>
 
         </figure>
@@ -18,8 +18,8 @@
             <div class="capacity">
                 <div class="main">
                     <div class="cost">
-                        <img class="element-type" src="/mode-nuit.png" alt="">
-                        <img class="element-type" src="/mode-nuit.png" alt="">
+                        <img class="element-type" [src]="SpiritTypeIcon" alt="">
+                        <img class="element-type" [src]="SpiritTypeIcon" alt="">
 
                     </div>
                     <div class="name">{{spirit.attackName}}</div>

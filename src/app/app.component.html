@@ -1,6 +1,8 @@
 
+<app-search-bar/>
+
 <button (click)="toggleSpirit()">Changer d'esprit</button>
  
 <div id="card-list">
-    <app-cardollection [spirit]="spirits[selectedSpiritIndex]"/>
+    <app-cardollection [spirit]="selectedSpirit()"/>
 </div>
